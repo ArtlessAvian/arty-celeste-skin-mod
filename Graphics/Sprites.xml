@@ -124,54 +124,57 @@
 
     <Metadata>
       <!-- Vanilla hair metadata -->
-      <Frames path="idle" hair="0,-2|0,-2|0,-2|0,-2|0,-1|0,-1|0,-1|0,-1|0,-1"/>
-      <Frames path="idleA" hair="0,-2|0,-2|0,-2|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-2"/>
-      <Frames path="idleB" hair="0,-2|0,-2|0,-2|0,-2|0,-2|0,-2|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3|0,-3"/>
-      <Frames path="idleC" hair="0,-2|0,-1|0,-3|0,-2|0,-1|0,-3|0,-1|0,-3|0,-1|0,-2|0,-3|0,-1|0,-2|0,-2|0,-2"/>
+      <!-- All y positions have been adjusted +8 (pixels downwards) -->
+      <Frames path="idle" hair="0,6|0,6|0,6|0,6|0,7|0,7|0,7|0,7|0,7"/>
+      <Frames path="idleA" hair="0,6|0,6|0,6|0,5|0,5|0,5|0,5|0,5|0,5|0,5|0,5|0,6"/>
+      <Frames path="idleB" hair="0,6|0,6|0,6|0,6|0,6|0,6|0,5|0,5|0,5|0,5|0,5|0,5|0,5|0,5|0,5"/>
+      <Frames path="idleC" hair="0,6|0,7|0,5|0,6|0,7|0,5|0,7|0,5|0,7|0,6|0,5|0,7|0,6|0,6|0,6"/>
       
-      <Frames path="walk" hair="0,-2|0,-1|0,-1|0,-1|0,-3|0,-2|0,-1|0,-1|0,-1|0,-1|0,-3|0,-2"/>
-      <Frames path="runSlow" hair="1,-2|1,-1|1,-1|1,-1|1,-3|1,-2|1,-1|1,-1|1,-1|1,-1|1,-3|1,-2"/>
-      <Frames path="runFast" hair="1,-2|1,-1|1,-1|1,-1|1,-3|1,-2|1,-1|1,-1|1,-1|1,-1|1,-3|1,-2"/>
-      <Frames path="run_wind" hair="4,-1|4,0|5,0|5,0|4,-2|4,-1|4,0|4,0|4,0|4,0|4,-2|4,-1"/>
-      <Frames path="push" hair="1,-2|1,-1|1,-1|1,-1|1,-2|1,-2|1,-2|1,-2|1,-1|1,-1|1,-1|1,-1|1,-2|1,-2|1,-2|1,-2"/>
-      <Frames path="flip" hair="-1,-1:2|-1,-1:1|0,-1:1|1,-1|1,-1|1,0|2,0|2,0"/>
+      <Frames path="walk" hair="0,6|0,7|0,7|0,7|0,5|0,6|0,7|0,7|0,7|0,7|0,5|0,6"/>
+      <Frames path="runSlow" hair="1,6|1,7|1,7|1,7|1,5|1,6|1,7|1,7|1,7|1,7|1,5|1,6"/>
+      <Frames path="runFast" hair="1,6|1,7|1,7|1,7|1,5|1,6|1,7|1,7|1,7|1,7|1,5|1,6"/>
+      <Frames path="run_wind" hair="4,7|4,8|5,8|5,8|4,6|4,7|4,8|4,8|4,8|4,8|4,6|4,7"/>
+      <Frames path="push" hair="1,6|1,7|1,7|1,7|1,6|1,6|1,6|1,6|1,7|1,7|1,7|1,7|1,6|1,6|1,6|1,6"/>
+      <Frames path="flip" hair="-1,7:2|-1,7:1|0,7:1|1,7|1,7|1,8|2,8|2,8"/>
 
-      <Frames path="climb" hair="0,-2|0,-2|0,-2|0,-2|-1,-2|-1,-2"/>
-      <Frames path="climbLookBack" hair="0,-1|1,-2:1|2,-2:2"/>
-      <Frames path="dangling" hair="0,-2|0,-2|0,-2|0,-2|-1,-2|-1,-2|-1,-2|-1,-2|-1,-2|-1,-2"/>
+      <Frames path="climb" hair="0,6|0,6|0,6|0,6|-1,6|-1,6"/>
+      <Frames path="climbLookBack" hair="0,7|1,6:1|2,6:2"/>
+      <Frames path="dangling" hair="0,6|0,6|0,6|0,6|-1,6|-1,6|-1,6|-1,6|-1,6|-1,6"/>
 
-      <Frames path="jumpSlow" hair="1,-3|1,-3|1,-2|0,-2"/>
-      <Frames path="jumpFast" hair="1,-3|1,-3|1,-2|0,-2"/>
+      <Frames path="jumpSlow" hair="1,5|1,5|1,6|0,6"/>
+      <Frames path="jumpFast" hair="1,5|1,5|1,6|0,6"/>
 
-      <Frames path="dash" hair="2,0|2,0|2,0|2,1"/>
-      <Frames path="dashSkid" hair="2,0"/>
-      <Frames path="dreamDash" hair="2,0|1,0|0,0|0,0|1,1|2,1|2,1|2,0|1,0|1,0|1,0|1,0|1,0|1,0|1,0|1,0|1,0|0,0|1,0|1,0|2,1"/>
+      <Frames path="dash" hair="-2,4|-2,4|-2,4|-2,4"/>
+      <Frames path="dashSkid" hair="2,8"/>
+      <Frames path="dreamDash" hair="2,8|1,8|0,8|0,8|1,1|2,1|2,1|2,8|1,8|1,8|1,8|1,8|1,8|1,8|1,8|1,8|1,8|0,8|1,8|1,8|2,1"/>
      
-      <Frames path="duck" hair="0,3"/>
+      <!-- This one was edited to stick out backwards -->
+      <Frames path="duck" hair="-2,1"/>
+
       <Frames path="hug" hair="0,2"/>
-      <Frames path="shaking" hair="0,-1"/>
-      <Frames path="lookUp" hair="0,-2|0,-2|-1,-2:1|-1,-2:1|-1,-2:1|-1,-2:1|-1,-3:1"/>
-      <Frames path="edge" hair="-1,-2|-1,-2|-1,-2|-1,-1|-1,-1|-1,-1|-1,-2|0,-2|1,-2|0,-2|0,-1|-1,-1|-1,-1|-1,-2"/>
-      <Frames path="edge_back" hair="1,-2:1|1,-2:2|0,-2:2|0,-1:2|-1,-2:2|0,-2:2|1,-2:2|1,-2:2|1,-2:2|1,-2:2|2,-1|2,-1|2,-1|2,-2"/>
+      <Frames path="shaking" hair="0,7"/>
+      <Frames path="lookUp" hair="0,6|0,6|-1,6:1|-1,6:1|-1,6:1|-1,6:1|-1,5:1"/>
+      <Frames path="edge" hair="-1,6|-1,6|-1,6|-1,7|-1,7|-1,7|-1,6|0,6|1,6|0,6|0,7|-1,7|-1,7|-1,6"/>
+      <Frames path="edge_back" hair="1,6:1|1,6:2|0,6:2|0,7:2|-1,6:2|0,6:2|1,6:2|1,6:2|1,6:2|1,6:2|2,7|2,7|2,7|2,6"/>
       
-      <Frames path="tired" hair="0,1|0,2|0,1|0,0"/>
+      <Frames path="tired" hair="0,1|0,2|0,1|0,8"/>
       <Frames path="sleep" hair=""/>
-      <Frames path="bigFall" hair="1,-2|1,-2|1,-2|1,-2|1,-2|1,-2|1,-2|1,-2|1,-2|1,-2|1,-2"/>
+      <Frames path="bigFall" hair="1,6|1,6|1,6|1,6|1,6|1,6|1,6|1,6|1,6|1,6|1,6"/>
       <Frames path="fallPose" hair="x|x|x|x|x|x|x|x|x"/>
 
-      <Frames path="swimIdle" hair="0,-2|0,-2|0,-2|0,-2|0,-2|0,-2"/>
-      <Frames path="swimUp" hair="0,-3|0,-3|0,-2|0,-2|0,-2|0,-2"/>
-      <Frames path="swimDown" hair="1,-1|1,-1|1,0|1,0|1,0|1,0"/>
+      <Frames path="swimIdle" hair="0,6|0,6|0,6|0,6|0,6|0,6"/>
+      <Frames path="swimUp" hair="0,5|0,5|0,6|0,6|0,6|0,6"/>
+      <Frames path="swimDown" hair="1,7|1,7|1,8|1,8|1,8|1,8"/>
       
-      <Frames path="startStarFly" hair="0,-2|0,-2|0,-2|0,-2"/>
+      <Frames path="startStarFly" hair="0,6|0,6|0,6|0,6"/>
       <Frames path="starFly" hair="0,3"/>
 
       <!-- Do not change the carry attributes. It changes gameplay and can make hard levels impossible -->
-      <Frames path="idle_carry" hair="0,-2|0,-2|0,-2|0,-2|0,-1|0,-1|0,-1|0,-1|0,-1" carry="-1,-1,-1,0,0,0,0,0,-1"/>
-      <Frames path="jump_carry" hair="1,-3|1,-3|1,-2|0,-2" carry="-3,-3,-1,-1"/>
-      <Frames path="run_carry" hair="1,-2|1,-1|1,-1|1,-1|1,-3|1,-2|1,-1|1,-1|1,-1|1,-1|1,-3|1,-2" carry="-1,0,0,0,-3,-2,-1,0,0,0,-3,-1"/>
-      <Frames path="pickup" hair="2,0|1,-1|0,-2|0,-2|0,-2"/>
-      <Frames path="throw" hair="0,-3|2,-2|2,-2|1,-2"/>
+      <Frames path="idle_carry" hair="0,6|0,6|0,6|0,6|0,7|0,7|0,7|0,7|0,7" carry="-1,-1,-1,0,0,0,0,0,-1"/>
+      <Frames path="jump_carry" hair="1,5|1,5|1,6|0,6" carry="-3,-3,-1,-1"/>
+      <Frames path="run_carry" hair="1,6|1,7|1,7|1,7|1,5|1,6|1,7|1,7|1,7|1,7|1,5|1,6" carry="-1,0,0,0,-3,-2,-1,0,0,0,-3,-1"/>
+      <Frames path="pickup" hair="2,8|1,7|0,6|0,6|0,6"/>
+      <Frames path="throw" hair="0,5|2,6|2,6|1,6"/>
 
       <!-- Modded hair metadata -->     
       <Frames path="modded/CommunalHelper/elytra" hair="4,0|4,0|4,-1|4,-1|3,-1|3,-1|2,-1|2,-1|2,-1" />

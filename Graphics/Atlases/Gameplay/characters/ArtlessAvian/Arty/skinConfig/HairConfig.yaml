@@ -2,47 +2,70 @@
 
 # Please use an online yaml validator if you encounter issues.
 HairFlash: true # Enables the white flash that happens when your dash count changes.
-HairFloatingDashCount: 2 # The dash count at which the hair starts foating like when you have two dashes. -1 to make the hair never float.
+HairFloatingDashCount: 0 # The dash count at which the hair starts foating like when you have two dashes. -1 to make the hair never float.
 OutlineColor: "040000" # This specifies the hair outline color, not the sprite outline of the player.
 
-# If your custom bangs or hair texture is larger than 10x10 pixels, it will get offset ingame. 
+# If your custom bangs or hair texture is larger than 10x10 pixels, it will get offset ingame.
 # Use these offsets to move the hair back into the right position.
 BangsOffset: 0, 0
 HairOffset: 0, 0
 
 # Here you change the hair color/scale/length
 HairAttrWithDashes:
-- Dashes: -1        # -1 Means the feather tail.
-  Scale: 1, 0.357   # The scale of the hair from start to end
-  Length: 7
+  - Dashes: -1 # -1 Means the feather tail.
+    Scale: 1, 0.357 # The scale of the hair from start to end
+    Length: 7
 
-- Dashes: 0
-  Color: "44B7FF"
-  Scale: 1, 0.4375
-  Length: 4
+  # Arty's colors:
+  # FFFF94 Yellow Accent Color
+  # A0DEFF Cyan Skin
 
-- Dashes: 1
-  Color: "AC3232"
-  Scale: 1, 0.4375
-  Length: 4
+  # I'm assuming bloom is additive?
+  # It adds a fraction of the "albedo", as well as some white.
+  # Theres a 0.5 bloom in Old Site.
+  # Usual values are from 0.2 to 0.3.
 
-- Dashes: 2
-  Color: "FF6DEF"
-  Scale: 1, 0.4375
-  Length: 5
+  # Bright cyans, magentas, and yellows become white.
+  # Other colors skew towards cyan, magenta, and yellow.
 
-- Dashes: 3
-  Color: "FF6DEF"
-  Scale: 1, 0.4375
-  Length: 5
-  SegmentAttrs:     # You can change hair color and scale for each individual hair segment by adding a SegmentAttrs attribute.
-  - Segment: 0      # Use negative segment numbers to start from the end of the hair.
+  # To counteract it:
+  # White can stay white.
+  # Bright cyan, magentas, and yellows can be more saturated. They become less saturated (more white) with more bloom.
+  # Bright reds, greens, and blues can stay the same. They might skew towards cyan or magenta or yellow.
+  # Low value colors are fine already.
+  # Middling value colors need to get darker.
+
+  # 0.2 bloom is about normal? So multiply by 1/1.2
+  # hex(round(10/12 * 0xFF))
+
+  - Dashes: 0
+    Color: "FFFF63" # Desaturated
+    Scale: 1, 0.25
+    Length: 7
+
+  - Dashes: 1
+    Color: "6BDEFF" # Less red.
+    Scale: 1, 0.25
+    Length: 7
+
+  - Dashes: 2
+    Color: "FF6DEF" # Vanilla double dash
+    Scale: 1, 0.25
+    Length: 7
+
+  - Dashes: 3
     Color: "FF6DEF"
-  - Segment: 1
-    Color: "B359C4"
-  - Segment: 2
-    Color: "733688"
-  - Segment: 3
-    Color: "B359C4"
-  - Segment: 4
-    Color: "FF6DEF"
+    Scale: 1, 0.25
+    Length: 7
+
+    # SegmentAttrs: # You can change hair color and scale for each individual hair segment by adding a SegmentAttrs attribute.
+    #   - Segment: 0 # Use negative segment numbers to start from the end of the hair.
+    #     Color: "FF6DEF"
+    #   - Segment: 1
+    #     Color: "B359C4"
+    #   - Segment: 2
+    #     Color: "733688"
+    #   - Segment: 3
+    #     Color: "B359C4"
+    #   - Segment: 4
+    #     Color: "FF6DEF"

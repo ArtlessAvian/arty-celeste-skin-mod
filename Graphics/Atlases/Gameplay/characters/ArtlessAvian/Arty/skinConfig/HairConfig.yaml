@@ -1,0 +1,48 @@
+# Text after a # symbol is a comment which gets ignored when the file is read.
+
+# Please use an online yaml validator if you encounter issues.
+HairFlash: true # Enables the white flash that happens when your dash count changes.
+HairFloatingDashCount: 2 # The dash count at which the hair starts foating like when you have two dashes. -1 to make the hair never float.
+OutlineColor: "040000" # This specifies the hair outline color, not the sprite outline of the player.
+
+# If your custom bangs or hair texture is larger than 10x10 pixels, it will get offset ingame. 
+# Use these offsets to move the hair back into the right position.
+BangsOffset: 0, 0
+HairOffset: 0, 0
+
+# Here you change the hair color/scale/length
+HairAttrWithDashes:
+- Dashes: -1        # -1 Means the feather tail.
+  Scale: 1, 0.357   # The scale of the hair from start to end
+  Length: 7
+
+- Dashes: 0
+  Color: "44B7FF"
+  Scale: 1, 0.4375
+  Length: 4
+
+- Dashes: 1
+  Color: "AC3232"
+  Scale: 1, 0.4375
+  Length: 4
+
+- Dashes: 2
+  Color: "FF6DEF"
+  Scale: 1, 0.4375
+  Length: 5
+
+- Dashes: 3
+  Color: "FF6DEF"
+  Scale: 1, 0.4375
+  Length: 5
+  SegmentAttrs:     # You can change hair color and scale for each individual hair segment by adding a SegmentAttrs attribute.
+  - Segment: 0      # Use negative segment numbers to start from the end of the hair.
+    Color: "FF6DEF"
+  - Segment: 1
+    Color: "B359C4"
+  - Segment: 2
+    Color: "733688"
+  - Segment: 3
+    Color: "B359C4"
+  - Segment: 4
+    Color: "FF6DEF"

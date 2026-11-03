@@ -1,0 +1,3 @@
+# Don't want to commit art that I don't own.
+# Skin might be a little broken if alternates aren't provided.
+*.png

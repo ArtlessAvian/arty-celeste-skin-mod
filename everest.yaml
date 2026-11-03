@@ -1,0 +1,7 @@
+- Name: Arty_Skinmod_ArtlessAvian
+  Version: 1.0.0
+  Dependencies:
+  - Name: Everest
+    Version: 1.5720.0
+  - Name: SkinModHelperPlus
+    Version: 0.16.5

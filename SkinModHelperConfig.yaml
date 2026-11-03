@@ -1,0 +1,6 @@
+- SkinName: "ArtlessAvian_Arty_NB"          # The name and dialog id of your skin. _NB is a special identifier that sets this skin as a no backpack skin. This affects sfx for example.
+  Player_List: true                             # Whether the skin should appear in mod options. Useful for map makers or a no backpack skin.
+  Silhouette_List: false                        # Can this skin be used as a skin for the playback/silhouette.
+  Character_ID: "ArtlessAvian_Arty"         # This is the sprite id of your skin in Sprites.xml
+  OtherSprite_Path: "ArtlessAvian/Arty"     # The Path to the secondary Sprites.xml that you use to override other entities like lookouts, boosters, benches etc.
+  Mod: "SkinModHelper_Grouping__Arty"     # The dialog id of your skin. Useful if your mod has multiple skins in it.

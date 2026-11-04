@@ -37,7 +37,8 @@
     <!-- 80 pixels per second. Slipping is ok. -->
     <Loop id="wallslide" path="climb" frame="0" />
     <!-- 45 pixels per second. -->
-    <Loop id="climbup" path="climb" delay="0.04" />
+    <!-- NOTE: Doubled frame times from vanilla -->
+    <Loop id="climbup" path="climb" delay="0.08" />
     <Anim id="climbLookBackStart" path="climbLookBack" delay="0.08" goto="climbLookBack" />
     <Loop id="climbLookBack" path="climbLookBack" frames="2" />
     <Loop id="dangling" path="dangling" delay="0.11" />
